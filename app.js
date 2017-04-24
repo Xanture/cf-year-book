@@ -26,3 +26,28 @@ function StudentGroupProject (students, imgSrc, title, discription, repoURL, dep
   this.deployedURL = deployedURL;
 
 }
+
+function handleStudentSubmit(event){
+// stop the browser from reloading
+  event.preventDefault();
+  var form = event.target;
+
+  var studentFName = form.firstName.value;
+  var studentLname = form.lastName.value;
+  var studentImage = form.studentImg.value;
+  var studentLink = form.linkdIn.value;
+  var studentGitHub = form.gitHub.value;
+
+  form.firstName.value = '';
+  form.lastName.value = '';
+  form.studentImg.value = '';
+  form.linkdIn.value = '';
+  form.gitHub.value = '';
+
+  var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
+
+  console.log(handleStudentSubmit);
+}
+
+var storeCreateFrom = document.getElementById('test');
+storeCreateFrom.addEventListener('submit', handleStudentSubmit);
