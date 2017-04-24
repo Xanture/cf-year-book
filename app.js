@@ -2,7 +2,7 @@
 
 var studentList = [];
 
-
+console.log('hello world');
 
 function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.firstName = firstName;
@@ -11,7 +11,11 @@ function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.linkdIn = linkdIn;
   this.gitHubURL = gitHubURL;
   studentList.push(this);
+  this.studentID = studentID();
 }
+var studentID = function() {
+  return Math.random() + '' + Math.random();
+};
 
 function StudentGroupProject (students, imgSrc, title, discription, repoURL, deployedURL) {
   this.students = studentList;
@@ -22,8 +26,3 @@ function StudentGroupProject (students, imgSrc, title, discription, repoURL, dep
   this.deployedURL = deployedURL;
 
 }
-
-Student.prototype.studentID = function() {
-  Math.random() + '' + Math.random();
-  return;
-};
