@@ -20,6 +20,7 @@ function StudentGroupProject (students, imgSrc, title, discription, repoURL, dep
   this.discription = discription;
   this.repoURL = repoURL;
   this.deployedURL = deployedURL;
+
 }
 
 Student.prototype.studentID = function() {
