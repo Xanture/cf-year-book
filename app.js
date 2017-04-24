@@ -46,8 +46,8 @@ function handleStudentSubmit(event){
 
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
 
-  console.log(handleStudentSubmit);
+  console.log(studentFName, studentLname, studentImage, studentLink, studentGitHub);
 }
 
-var storeCreateFrom = document.getElementById('test');
+var storeCreateFrom = document.getElementById('submit');
 storeCreateFrom.addEventListener('submit', handleStudentSubmit);
