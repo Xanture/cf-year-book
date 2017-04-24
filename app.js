@@ -10,10 +10,12 @@ function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.imgSrc = imgSrc;
   this.linkdIn = linkdIn;
   this.gitHubURL = gitHubURL;
-  
+
 }
 
-function StudentGroupProject ()
+function StudentGroupProject(){
+
+}
 
 Student.prototype.studentID = function() {
   Math.random() + '' + Math.random();
