@@ -48,6 +48,7 @@ function handleStudentSubmit(event){
   addImage.src = studentImage;
   app.appendChild(addImage);
 
+
 }
 try {
   studentList = JSON.parse(localStorage.data);
