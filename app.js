@@ -36,7 +36,7 @@ function handleStudentSubmit(event){
   event.preventDefault();
   var form = event.target;
 
-//  var studentFName = form.firstName.value;
+  var studentFName = form.firstName.value;
   var studentLname = form.lastName.value;
   var studentImage = form.studentImg.value;
   var studentLink = form.linkdIn.value;
@@ -94,17 +94,13 @@ try {
 }
 try {
   var addStudent = document.getElementById('add-student');
-  addStudent.addEventListener('click', addAGroupMemeber)
+  addStudent.addEventListener('submit', addAGroupMemeber)
 }  catch (error) {
   console.log('error');
 }
 function addAGroup() {
-console.log('works');
+console.log('work event');
 }
 function addAGroupMember() {
-  var opt = document.createElement('option');
-  opt.text = studentList[i].firstName + ' ' + studentList[i].lastName;
-  console.log(opt.innerHTML);
-  opt.value = studentList[i].firstName;
-  sel.appendChild(opt);
+  console.log('working event');
 }
