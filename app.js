@@ -46,13 +46,12 @@ function handleStudentSubmit(event){
   form.linkdIn.value = '';
   form.gitHub.value = '';
 
-
-var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
+  var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
   console.log(localStorage.data);
 
-  var addImage1 = document.createElement('div');
+  // var addImage1 = document.createElement('div');
   var addImage = document.createElement('img');
   addImage.src = studentImage;
   app.appendChild(addImage);
