@@ -46,7 +46,13 @@ function handleStudentSubmit(event){
   form.gitHub.value = '';
 
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
+
+  var addImage1 = document.createElement('div');
+  var addImage = document.createElement('img');
+  addImage.src = studentImage;
+  app.appendChild(addImage);
   localStorage.data = JSON.stringify(studentList);
+
 
 }
 try {
