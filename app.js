@@ -56,15 +56,28 @@ var studentUpload = new Student (studentFName, studentLname, studentImage, stude
   var addImage = document.createElement('img');
   addImage.src = studentImage;
   app.appendChild(addImage);
-  localStorage.data = JSON.stringify(studentList);
 
 }
+try {
+  studentList = JSON.parse(localStorage.data);
+  console.log(studentList);
+} catch (error) {
+  console.log('no data');
+}
+
+var sel = document.getElementById('group-form');
+console.log(studentList);
+for(var i = 0; i < studentList.length; i++) {
+  var opt = document.createElement('option');
+  opt.text = studentList[i].firstName + ' ' + studentList[i].lastName;
+  console.log(opt.innerHTML);
+  opt.value = studentList[i].firstName;
+  sel.appendChild(opt);
+}
+
 try {
   var storeCreateFrom = document.getElementById('submit');
   storeCreateFrom.addEventListener('submit', handleStudentSubmit);
 } catch (error) {
   console.log('error');
 }
-
-studentList = JSON.parse(localStorage.data);
-console.log(studentList);
