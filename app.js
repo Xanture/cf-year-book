@@ -2,6 +2,7 @@
 
 var studentList = [];
 var wrap = document.getElementById('test');
+var data;
 
 console.log('hello world');
 
@@ -45,14 +46,17 @@ function handleStudentSubmit(event){
   form.linkdIn.value = '';
   form.gitHub.value = '';
 
-  var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
+
+var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
+  console.log(studentList);
+  localStorage.data = JSON.stringify(studentList);
+  console.log(localStorage.data);
 
   var addImage1 = document.createElement('div');
   var addImage = document.createElement('img');
   addImage.src = studentImage;
   app.appendChild(addImage);
   localStorage.data = JSON.stringify(studentList);
-
 
 }
 try {
@@ -61,3 +65,6 @@ try {
 } catch (error) {
   console.log('error');
 }
+
+studentList = JSON.parse(localStorage.data);
+console.log(studentList);
