@@ -29,7 +29,7 @@ function StudentGroupProject (students, imgSrc, title, discription, repoURL, dep
 }
 
 function handleStudentSubmit(event){
-// stop the browser from reloading
+  // stop the browser from reloading
   event.preventDefault();
   var form = event.target;
 
@@ -56,8 +56,8 @@ function handleStudentSubmit(event){
 
 }
 try {
-var storeCreateFrom = document.getElementById('submit');
-storeCreateFrom.addEventListener('submit', handleStudentSubmit);
+  var storeCreateFrom = document.getElementById('submit');
+  storeCreateFrom.addEventListener('submit', handleStudentSubmit);
 } catch (error) {
   console.log('error');
 }
