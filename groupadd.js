@@ -58,7 +58,18 @@ function groupFormHandleSubmit(event) {
     var groupImg = form.groupImg.value;
     var repoURL = form.repoURL.value;
     var deployedURL = form.deployedURL.value;
-  var group = new StudentGroupProject([],groupImg,title,description,repoURL,deployedURL);
+    var students = [];
+    for (var i = 0;i < groupFormStudents.children.length; i++) {
+      var select = groupFormStudents.children[i];
+
+      students.push(select.value);
+    }
+  var group = new StudentGroupProject(students,groupImg,title,description,repoURL,deployedURL);
+  try {
+    localStorage.groupList = JSON.stringify(groupList)
+  }catch (error){
+    console.log('error',error)
+  }
   console.log('lowat',group);
 }
 
@@ -66,7 +77,7 @@ function addAGroupMember() {
   var select = document.createElement('select');
   for(var i = 0; i < studentList.length; i++) {
     var option = document.createElement('option');
-    option.textContent = studentList[i].firstName
+    option.textContent = studentList[i].firstName + ' ' + studentList[i].lastName
     select.appendChild(option);
   }
   groupFormStudents.appendChild(select);
