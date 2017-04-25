@@ -21,16 +21,6 @@ var studentID = function() {
   return Math.random() + '' + Math.random();
 };
 
-function StudentGroupProject (students, imgSrc, title, discription, repoURL, deployedURL) {
-  this.students = studentList;
-  this.imgSrc = imgSrc;
-  this.title = title;
-  this.discription = discription;
-  this.repoURL = repoURL;
-  this.deployedURL = deployedURL;
-
-}
-
 function handleStudentSubmit(event){
   // stop the browser from reloading
   event.preventDefault();
@@ -48,13 +38,12 @@ function handleStudentSubmit(event){
   form.linkdIn.value = '';
   form.gitHub.value = '';
 
-
-var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
+  var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
   console.log(localStorage.data);
 
-  var addImage1 = document.createElement('div');
+  // var addImage1 = document.createElement('div');
   var addImage = document.createElement('img');
   addImage.src = studentImage;
   app.appendChild(addImage);
@@ -67,24 +56,13 @@ try {
   console.log('no data');
 }
 
-var sel = document.getElementById('group-form');
-console.log(studentList);
-
-
-  for(var i = 0; i < studentList.length; i++) {
-    var opt = document.createElement('option');
-    opt.text = studentList[i].firstName + ' ' + studentList[i].lastName;
-    console.log(opt.innerHTML);
-    opt.value = studentList[i].firstName;
-    sel.appendChild(opt);
-  }
-
 try {
   var storeCreateFrom = document.getElementById('submit');
   storeCreateFrom.addEventListener('submit', handleStudentSubmit);
 } catch (error) {
   console.log('error');
 }
+
 
 try {
   var addGroup = document.getElementById('submit-group');
