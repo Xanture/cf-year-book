@@ -6,13 +6,16 @@
   </head>
   <body>
     <div class="student-form" id="app">
-      <form id="submit">
-        <div id="group-form">
+      <form id="group-form">
+        <input name="title" type="text" placeholder="Project Name">
+        <input name="desc" type="text" placeholder="Project Description" >
+        <input name="groupImg" type="text" placeholder="Picture URL">
+        <input name="repoURL" type="text" placeholder="GitHub Project URL">
+        <input name="deployedURL" type="text" placeholder="Deployed Page URL">
+        <div id="group-form-students">
         </div>
-        <div id="student-group-button">
-        <button id="submit-group" type="button">Add Group</button>
-        <button id="add-student"  type="button">Add Another Group Member</button>
-        </div>
+        <button id="add-student"  type="button">Add Member</button>
+        <button  type="submit">Create Group</button>
         <!-- <input name="firstName" type="text" placeholder="First Name"/>
         <input name="lastName" type="text" placeholder="Last Name"/>
         <input name="studentImg" type="text" placeholder="Picture URL">
