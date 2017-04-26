@@ -117,8 +117,6 @@ li.dropit {
 .size {
   font-size: 40px;
 }
-
-
 .style-link{
   display: block;
 }
@@ -130,7 +128,7 @@ li.dropit {
   float: left;
   display: inline-block;
   text-align: center;
-
+}
 .group-img {
   height: 500px;
   width: 500px;
