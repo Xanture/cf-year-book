@@ -11,15 +11,19 @@ for (var i = 0; i < groupList.length; i++){
   var addImage = document.createElement('img');
   var addGroupInfo = document.createElement('ul');
 
+  addImage.setAttribute('class', 'group-img');
   addImage.src = groupList[i].imgSrc;
   groupprojects.appendChild(addImage);
   groupprojects.appendChild(addGroupInfo);
 
   var addTitle = document.createElement('li');
+  addTitle.setAttribute('class', 'title-description');
   addTitle.textContent = groupList[i].title;
   var addStudents = document.createElement('li');
+  addStudents.setAttribute('class', 'student-name-list');
   addStudents.textContent = groupList[i].students;
   var addDiscription = document.createElement('li');
+  addDiscription.setAttribute('class', 'group-description');
   addDiscription.textContent = groupList[i].discription;
 
   addGroupInfo.appendChild(addTitle);
