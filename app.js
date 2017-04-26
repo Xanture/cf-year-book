@@ -1,12 +1,6 @@
 'use strict';
 
 var studentList = [];
-var wrap = document.getElementById('test');
-var studentGroupButton = document.getElementById('student-group-button');
-var data;
-var addMoreStudents = true;
-
-console.log('hello world');
 
 function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.firstName = firstName;
@@ -41,14 +35,6 @@ function handleStudentSubmit(event){
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
-  console.log(localStorage.data);
-
-  // var addImage1 = document.createElement('div');
-  var addImage = document.createElement('img');
-  addImage.src = studentImage;
-  app.appendChild(addImage);
-
-
 }
 try {
   studentList = JSON.parse(localStorage.data);
@@ -62,24 +48,4 @@ try {
   storeCreateFrom.addEventListener('submit', handleStudentSubmit);
 } catch (error) {
   console.log('error');
-}
-
-
-try {
-  var addGroup = document.getElementById('submit-group');
-  addGroup.addEventListener('submit', addAGroup)
-}  catch (error) {
-  console.log('error');
-}
-try {
-  var addStudent = document.getElementById('add-student');
-  addStudent.addEventListener('submit', addAGroupMemeber)
-}  catch (error) {
-  console.log('error');
-}
-function addAGroup() {
-console.log('work event');
-}
-function addAGroupMember() {
-  console.log('working event');
 }
