@@ -19,14 +19,29 @@ for (var i = 0; i < groupList.length; i++){
   addStudents.textContent = groupList[i].students;
   var addDiscription = document.createElement('li');
   addDiscription.textContent = groupList[i].discription;
-  var addRepoURL = document.createElement('li');
-  addRepoURL.textContent = groupList[i].repoURL;
-  var addDeployedURL = document.createElement('li');
-  addDeployedURL.textContent = groupList[i].deployedURL;
 
   addGroupInfo.appendChild(addTitle);
   addGroupInfo.appendChild(addStudents);
   addGroupInfo.appendChild(addDiscription);
-  addGroupInfo.appendChild(addRepoURL);
-  addGroupInfo.appendChild(addDeployedURL);
+
+  var addRepoURLLI= document.createElement('li');
+  addGroupInfo.appendChild(addRepoURLLI);
+  var addRepoURL = document.createElement('a');
+  var addRepoURLDesc = document.createTextNode(groupList[i].repoURL);
+  addRepoURL.appendChild(addRepoURLDesc);
+  addRepoURL.title = groupList[i].repoURL;
+  addRepoURL.href = groupList[i].repoURL;
+  addRepoURL.textContent = groupList[i].repoURL;
+
+  var addDeployedURLLI = document.createElement('li');
+  addGroupInfo.appendChild(addDeployedURLLI);
+  var addDeployedURL = document.createElement('a');
+  var addDeployedURLDesc = document.createTextNode(groupList[i].deployedURL);
+  addDeployedURL.appendChild(addDeployedURLDesc);
+  addDeployedURL.title = groupList[i].deployedURL;
+  addDeployedURL.href = groupList[i].deployedURL;
+  addDeployedURL.textContent = groupList[i].deployedURL;
+
+  addRepoURLLI.appendChild(addRepoURL);
+  addDeployedURLLI.appendChild(addDeployedURL);
 }
