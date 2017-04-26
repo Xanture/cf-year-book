@@ -20,19 +20,21 @@ for (var i = 0; i < studentList.length; i++){
   studentInfoLName.textContent = studentList[i].lastName;
   app.appendChild(studentInfoLName);
 
-  var studentInfoLink = document.createElement('p');
-  studentInfoLink.textContent = studentList[i].linkdIn;
-  app.appendChild(studentInfoLink);
+  var linkdInLink = document.createElement('a');
+  linkdInLink.setAttribute('class', 'styleLink');
+  var linkText = document.createTextNode(studentList[i].linkdIn);
+  linkdInLink.appendChild(linkText);
+  linkdInLink.title = studentList[i].linkdIn;
+  linkdInLink.href = studentList[i].linkdIn;
+  app.appendChild(linkdInLink);
 
-  // var studentInfoGit = document.createElement('a');
-  // var linkText = document.createTextNode(studentList[i].gitHubURL);
-  // studentInfoGit.appendChild = (linkText);
-  // studentInfoGit.href = studentList[i].gitHubURL;
-  // studentInfoGit.title = studentList[i].gitHubURL;
-  var link = studentList[i].gitHubURL;
-  var element = document.createElement('a');
-  element.setAttribute('href', link);
-  element.innerHTML = 'your text';
-  app.appendChild(element);
+  var gitHubLink = document.createElement('a');
+  gitHubLink.setAttribute('class', 'styleLink');
+  var linkText = document.createTextNode(studentList[i].gitHubURL);
+  gitHubLink.appendChild(linkText);
+  gitHubLink.title = studentList[i].gitHubURL;
+  gitHubLink.href = studentList[i].gitHubURL;
+  app.appendChild(gitHubLink);
+  //app.appendChild(element);
 
 }
