@@ -24,8 +24,15 @@ for (var i = 0; i < studentList.length; i++){
   studentInfoLink.textContent = studentList[i].linkdIn;
   app.appendChild(studentInfoLink);
 
-  var studentInfoGit = document.createElement('p');
-  studentInfoGit.textContent = studentList[i].gitHubURL;
-  app.appendChild(studentInfoGit);
+  // var studentInfoGit = document.createElement('a');
+  // var linkText = document.createTextNode(studentList[i].gitHubURL);
+  // studentInfoGit.appendChild = (linkText);
+  // studentInfoGit.href = studentList[i].gitHubURL;
+  // studentInfoGit.title = studentList[i].gitHubURL;
+  var link = studentList[i].gitHubURL;
+  var element = document.createElement('a');
+  element.setAttribute('href', link);
+  element.innerHTML = 'your text';
+  app.appendChild(element);
 
 }
