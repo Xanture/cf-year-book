@@ -10,9 +10,11 @@ for (var i = 0; i < groupList.length; i++){
 
   var addImage = document.createElement('img');
   var addGroupInfo = document.createElement('ul');
+
   addImage.src = groupList[i].imgSrc;
   groupprojects.appendChild(addImage);
   groupprojects.appendChild(addGroupInfo);
+
   var addTitle = document.createElement('li');
   addTitle.textContent = groupList[i].title;
   var addStudents = document.createElement('li');
