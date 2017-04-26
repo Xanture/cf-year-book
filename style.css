@@ -77,6 +77,7 @@ li.dropit {
   font-size: 32px;
 }
 
+
 .style-link{
   display: block;
 }
@@ -88,4 +89,17 @@ li.dropit {
   float: left;
   display: inline-block;
   text-align: center;
+
+.group-img {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-description, .student-name-list, .group-description {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
