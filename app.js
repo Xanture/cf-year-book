@@ -6,8 +6,8 @@ function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.imgSrc = imgSrc;
-  this.linkdIn = linkdIn;
-  this.gitHubURL = gitHubURL;
+  this.linkdIn = 'http://' + linkdIn;
+  this.gitHubURL = 'http://' + gitHubURL;
   studentList.push(this);
   this.studentID = studentID();
 }
@@ -35,6 +35,7 @@ function handleStudentSubmit(event){
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
+
 }
 try {
   studentList = JSON.parse(localStorage.data);

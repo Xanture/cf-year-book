@@ -117,3 +117,30 @@ li.dropit {
 .size {
   font-size: 40px;
 }
+
+
+.style-link{
+  display: block;
+}
+
+#app{
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 1%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+
+.group-img {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-description, .student-name-list, .group-description {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
