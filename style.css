@@ -76,6 +76,20 @@ li.dropit {
   color: white;
   font-size: 32px;
 }
+
+
+.style-link{
+  display: block;
+}
+
+#app{
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 1%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+
 .group-img {
   height: 500px;
   width: 500px;
