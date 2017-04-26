@@ -1,5 +1,5 @@
 'use strict';
-studentList = [];
+var studentList = [];
 
 try{
   studentList = JSON.parse(localStorage.data);

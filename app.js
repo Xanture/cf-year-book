@@ -1,12 +1,6 @@
 'use strict';
 
 var studentList = [];
-var wrap = document.getElementById('test');
-var studentGroupButton = document.getElementById('student-group-button');
-var data;
-var addMoreStudents = true;
-
-console.log('hello world');
 
 function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.firstName = firstName;
@@ -41,6 +35,7 @@ function handleStudentSubmit(event){
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
+<<<<<<< HEAD
   console.log(localStorage.data);
 
   // var addImage1 = document.createElement('div');
@@ -49,6 +44,8 @@ function handleStudentSubmit(event){
   // app.appendChild(addImage);
 
 
+=======
+>>>>>>> 3a65f80f816a4665ca5403dbd07da13672e7a057
 }
 try {
   studentList = JSON.parse(localStorage.data);
@@ -63,6 +60,7 @@ try {
 } catch (error) {
   console.log('error');
 }
+<<<<<<< HEAD
 
 try {
   var addGroup = document.getElementById('submit-group');
@@ -82,3 +80,5 @@ function addAGroup() {
 function addAGroupMember() {
   console.log('working event');
 }
+=======
+>>>>>>> 3a65f80f816a4665ca5403dbd07da13672e7a057
