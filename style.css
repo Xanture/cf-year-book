@@ -9,18 +9,70 @@
 html, body {
   height: 100%;
 }
-.imgContainer {
-  text-align: center;
-  float: left;
-  height: 8%;
-  width: 8%;
-  font-size: 100%;
-  background-color: #ADD8E6;
-  padding: .50%;
-  border: none;
+
+#fixed {
+  position: fixed;
 }
-#bar {
-  background-color: #ADD8E6;
-  height: 10%;
-  width: 100%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+li a, .drop {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropit:hover .drop {
+    background-color: red;
+}
+
+li.dropit {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 20%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropit:hover .dropdown-content {
+    display: block;
+}
+#crest {
+  width: 2.80%;
+  height: 2.80%;
+}
+#year {
+  width: 15%;
+  height: 2.80%;
+  color: white;
+  font-size: 32px;
 }
