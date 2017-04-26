@@ -119,11 +119,14 @@ li.dropit {
 }
 .style-link{
   display: block;
-
-
+  display: inline-block;
+}
+p{
+  display: inline-block;
 }
 .style-image{
   width: 25%;
+  display: inline-block;
 }
 #app{
   /*width: 100%;*/
@@ -131,7 +134,6 @@ li.dropit {
   margin-left: 1%;
   float: left;
   display: inline-block;
-  text-align: center;
 }
 .group-img {
   height: 500px;
