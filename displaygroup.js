@@ -21,7 +21,7 @@ for (var i = 0; i < groupList.length; i++){
   addTitle.textContent = groupList[i].title;
   var addStudents = document.createElement('li');
   addStudents.setAttribute('class', 'student-name-list');
-  addStudents.textContent = groupList[i].students;
+  addStudents.textContent = (groupList[i].students);
   var addDiscription = document.createElement('li');
   addDiscription.setAttribute('class', 'group-description');
   addDiscription.textContent = groupList[i].discription;
@@ -31,6 +31,7 @@ for (var i = 0; i < groupList.length; i++){
   addGroupInfo.appendChild(addDiscription);
 
   var addRepoURLLI= document.createElement('li');
+  addRepoURLLI.setAttribute('class', 'repo-URL');
   addGroupInfo.appendChild(addRepoURLLI);
   var addRepoURL = document.createElement('a');
   var addRepoURLDesc = document.createTextNode(groupList[i].repoURL);
@@ -40,6 +41,7 @@ for (var i = 0; i < groupList.length; i++){
   addRepoURL.textContent = groupList[i].repoURL;
 
   var addDeployedURLLI = document.createElement('li');
+  addDeployedURLLI.setAttribute('class', 'deployed-page-URL')
   addGroupInfo.appendChild(addDeployedURLLI);
   var addDeployedURL = document.createElement('a');
   var addDeployedURLDesc = document.createTextNode(groupList[i].deployedURL);
