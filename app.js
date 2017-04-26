@@ -6,8 +6,8 @@ function Student (firstName, lastName, imgSrc, linkdIn, gitHubURL) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.imgSrc = imgSrc;
-  this.linkdIn = linkdIn;
-  this.gitHubURL = gitHubURL;
+  this.linkdIn = 'http://' + linkdIn;
+  this.gitHubURL = 'http://' + gitHubURL;
   studentList.push(this);
   this.studentID = studentID();
 }
