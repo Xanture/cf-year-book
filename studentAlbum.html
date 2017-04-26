@@ -2,9 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>CF Year Book</title>
   </head>
   <body>
+
+    <nav id="fixed">
+      <ul>
+        <li id="crest"><img alt="CF" src="img/CF.png"</li>
+        <li id="year"> YEAR BOOK</li>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropit">
+          <a href="javascript:void(0)" class="drop">Students</a>
+          <div class="dropdown-content">
+            <a href="studentAlbum.html">View Students</a>
+            <a href="studentForm.html">Add Student</a>
+          </div>
+        </li>
+        <li class="dropit">
+          <a href="javascript:void(0)" class="drop">Projects</a>
+          <div class="dropdown-content">
+            <a href="groupAlbum.html">View Projects</a>
+            <a href="groupForm.html">Add Project</a>
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="student-container" id="app">
+    </div>
+
     <div class="student-container" id="app"></div>
 
 
