@@ -75,6 +75,47 @@ li.dropit {
   height: 2.80%;
   color: white;
   font-size: 32px;
+  padding: .2%;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+   background: black;
+}
+#crest-footer {
+  width: 5%;
+  height: 5%;
+}
+#year-footer {
+  width: 15%;
+  height: 5%;
+  color: white;
+  font-size: 32px;
+  padding: 1.2%;
+  margin-right: 58%;
+}
+#place  {
+  width: 20%;
+  height: 5%;
+  padding: 1%;
+}
+#group-form {
+  float: left;
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 40%;
+}
+.crest {
+  width: 5%;
+  height: 5%;
+  padding: 1%;
+}
+.size {
+  font-size: 40px;
 }
 
 
