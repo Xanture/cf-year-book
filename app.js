@@ -35,6 +35,7 @@ function handleStudentSubmit(event){
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
+
 }
 try {
   studentList = JSON.parse(localStorage.data);
