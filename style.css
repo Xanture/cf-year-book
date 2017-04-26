@@ -1,7 +1,26 @@
 
-.nav-pics {
-margin-right: 20px;
-width: 1px;
-height: 1px;
-float: left;
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+.imgContainer {
+  text-align: center;
+  float: left;
+  height: 8%;
+  width: 8%;
+  font-size: 100%;
+  background-color: #ADD8E6;
+  padding: .50%;
+  border: none;
+}
+#bar {
+  background-color: #ADD8E6;
+  height: 10%;
+  width: 100%;
 }
