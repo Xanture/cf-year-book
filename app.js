@@ -35,6 +35,17 @@ function handleStudentSubmit(event){
   var studentUpload = new Student (studentFName, studentLname, studentImage, studentLink, studentGitHub);
   console.log(studentList);
   localStorage.data = JSON.stringify(studentList);
+<<<<<<< HEAD
+  console.log(localStorage.data);
+
+  // var addImage1 = document.createElement('div');
+  // var addImage = document.createElement('img');
+  // addImage.src = studentImage;
+  // app.appendChild(addImage);
+
+
+=======
+>>>>>>> 3a65f80f816a4665ca5403dbd07da13672e7a057
 }
 try {
   studentList = JSON.parse(localStorage.data);
@@ -49,3 +60,25 @@ try {
 } catch (error) {
   console.log('error');
 }
+<<<<<<< HEAD
+
+try {
+  var addGroup = document.getElementById('submit-group');
+  addGroup.addEventListener('submit', addAGroup);
+} catch (error) {
+  console.log('error');
+}
+try {
+  var addStudent = document.getElementById('add-student');
+  addStudent.addEventListener('submit', addAGroupMemeber);
+} catch (error) {
+  console.log('error');
+}
+function addAGroup() {
+  console.log('work event');
+}
+function addAGroupMember() {
+  console.log('working event');
+}
+=======
+>>>>>>> 3a65f80f816a4665ca5403dbd07da13672e7a057
