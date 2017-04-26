@@ -44,9 +44,9 @@ function handleStudentSubmit(event){
   console.log(localStorage.data);
 
   // var addImage1 = document.createElement('div');
-  var addImage = document.createElement('img');
-  addImage.src = studentImage;
-  app.appendChild(addImage);
+  // var addImage = document.createElement('img');
+  // addImage.src = studentImage;
+  // app.appendChild(addImage);
 
 
 }
@@ -64,21 +64,20 @@ try {
   console.log('error');
 }
 
-
 try {
   var addGroup = document.getElementById('submit-group');
-  addGroup.addEventListener('submit', addAGroup)
-}  catch (error) {
+  addGroup.addEventListener('submit', addAGroup);
+} catch (error) {
   console.log('error');
 }
 try {
   var addStudent = document.getElementById('add-student');
-  addStudent.addEventListener('submit', addAGroupMemeber)
-}  catch (error) {
+  addStudent.addEventListener('submit', addAGroupMemeber);
+} catch (error) {
   console.log('error');
 }
 function addAGroup() {
-console.log('work event');
+  console.log('work event');
 }
 function addAGroupMember() {
   console.log('working event');
