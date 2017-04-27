@@ -154,7 +154,7 @@ li.dropit {
 }
 .group-img {
   height: 500px;
-  width: 500px;
+  width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -305,4 +305,7 @@ body {
   width: 20%;
   height: 20%;
 
+}
+.deployed-page-URL {
+  padding-bottom: 100px;
 }
