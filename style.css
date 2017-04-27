@@ -115,6 +115,8 @@ li.dropit {
 }
 .size {
   font-size: 40px;
+  border-radius: 10px;
+  margin-bottom: 2%;
 }
 .style-link{
   display: block;
@@ -262,27 +264,27 @@ body {
   float: left;
 }
 #natop {
-  width: 10%;
-  height: 15%;
+  width: 5%;
+  height: 10%;
   color: white;
   font-weight: bold;
   overflow: scroll;
 
 }
 #justinp {
-  width: 20%;
-  height: 20%;
+  width: 5%;
+  height: 10%;
   color: white;
   font-weight: bold;
-  word-wrap: break-word;
+  overflow: scroll;
 
 }
 #brianp {
-  width: 20%;
-  height: 20%;
+  width: 5%;
+  height: 10%;
   color: white;
   font-weight: bold;
-  word-wrap: break-word;
+  overflow: scroll;
 
 }
 #bios {
@@ -294,15 +296,36 @@ body {
 #natop {
   width: 20%;
   height: 20%;
-
+  float: left;
+  padding: 1%;
 }
 #justinp {
   width: 20%;
   height: 20%;
+  float: left;
+  padding: 1%;
 
 }
 #brianp {
   width: 20%;
   height: 20%;
+  float: left;
+  padding: 1%;
 
+}
+
+button {
+  width: 30%;
+  height: 10%;
+  padding: 1%;
+  margin-left: 15%;
+
+}
+
+#but {
+  margin-left: 35%;
+}
+#paragraph {
+float: left;
+margin-left: 20%;
 }
