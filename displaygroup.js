@@ -10,7 +10,7 @@ for (var i = 0; i < groupList.length; i++){
 
   var addImage = document.createElement('img');
   var addGroupInfo = document.createElement('ul');
-
+  addGroupInfo.setAttribute('class', 'add-group-info')
   addImage.setAttribute('class', 'group-img');
   addImage.src = groupList[i].imgSrc;
   groupprojects.appendChild(addImage);
@@ -41,7 +41,7 @@ for (var i = 0; i < groupList.length; i++){
   addRepoURL.textContent = groupList[i].repoURL;
 
   var addDeployedURLLI = document.createElement('li');
-  addDeployedURLLI.setAttribute('class', 'deployed-page-URL')
+  addDeployedURLLI.setAttribute('class', 'deployed-page-URL');
   addGroupInfo.appendChild(addDeployedURLLI);
   var addDeployedURL = document.createElement('a');
   var addDeployedURLDesc = document.createTextNode(groupList[i].deployedURL);
