@@ -44,12 +44,11 @@ function groupFormHandleSubmit(event) {
     students.push(select.value);
   }
   var group = new StudentGroupProject(students,groupImg,title,description,repoURL,deployedURL);
-  try {
-    localStorage.groupList = JSON.stringify(groupList);
-  }catch (error){
-    console.log('error',error);
-  }
-  form.clear();
+  console.log(groupList);
+
+  localStorage.groupList = JSON.stringify(groupList);
+  groupForm.reset();
+  window.location.href = 'groupAlbum.html';
 }
 
 function addAGroupMember() {
