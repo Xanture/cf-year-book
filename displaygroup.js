@@ -10,7 +10,7 @@ for (var i = 0; i < groupList.length; i++){
 
   var addImage = document.createElement('img');
   var addGroupInfo = document.createElement('ul');
-  addGroupInfo.setAttribute('class', 'add-group-info')
+  addGroupInfo.setAttribute('class', 'add-group-info');
   addImage.setAttribute('class', 'group-img');
   addImage.src = groupList[i].imgSrc;
   groupprojects.appendChild(addImage);
