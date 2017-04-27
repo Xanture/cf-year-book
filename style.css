@@ -137,13 +137,13 @@ li.dropit {
   color: 	white;
   font-family: 'Ranga', cursive;
 }
-/*#app{
+#app{
   width: 100%;
   margin-top: 5%;
   margin-left: 1%;
   float: left;
   display: inline-block;
-}*/
+}
 .group-img {
   height: 500px;
   width: 500px;
@@ -233,4 +233,68 @@ body {
   padding: 2%;
   margin-right: 68%;
   border-radius: 100px;
+}
+#nato {
+  padding: 3%;
+  width: 20%;
+  height: 20%;
+  float: left;
+  margin-left: 20%;
+}
+#justin {
+  padding: 3%;
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+#brian {
+  padding: 3%;
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+#natop {
+  width: 10%;
+  height: 15%;
+  color: white;
+  font-weight: bold;
+  overflow: scroll;
+
+}
+#justinp {
+  width: 20%;
+  height: 20%;
+  color: white;
+  font-weight: bold;
+  word-wrap: break-word;
+
+}
+#brianp {
+  width: 20%;
+  height: 20%;
+  color: white;
+  font-weight: bold;
+  word-wrap: break-word;
+
+}
+#bios {
+  float:left;
+  margin-top: 5%;
+  width: 100%;
+  height: 50%;
+}
+#natop {
+  width: 20%;
+  height: 20%;
+
+}
+#justinp {
+  width: 20%;
+  height: 20%;
+
+}
+#brianp {
+  width: 20%;
+  height: 20%;
+
 }
