@@ -49,6 +49,7 @@ function groupFormHandleSubmit(event) {
   }catch (error){
     console.log('error',error);
   }
+  form.clear();
 }
 
 function addAGroupMember() {
