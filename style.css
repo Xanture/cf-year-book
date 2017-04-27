@@ -119,13 +119,19 @@ li.dropit {
 .style-link{
   display: block;
   display: inline-block;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 30px;
+  font-family: 'Sacramento', cursive;
   text-decoration: none;
   color: white;
+  cursor: pointer; cursor: hand;
 }
 .style-image{
-  width: 70%;
+  /*width: 70%;*/
+  border-radius: 25px;
+  /*background: #73AD21;*/
+  padding: 20px;
+  width: 250px;
+  height: 250px;
 
 }
 .all-style{
@@ -134,9 +140,10 @@ li.dropit {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
+  padding-bottom: 5%;
   font-size: 30px;
   color: 	white;
-  font-family: 'Ranga', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
 }
 /*#app{
   width: 100%;
