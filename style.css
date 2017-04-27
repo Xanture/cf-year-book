@@ -138,9 +138,11 @@ li.dropit {
   width: 25%;
   display: inline-block;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
   margin-bottom: 5%;
   padding-bottom: 5%;
+  margin-left: 6%;
+  overflow: scroll;
   font-size: 30px;
   color: 	white;
   font-family: 'Shadows Into Light Two', cursive;
