@@ -37,7 +37,7 @@ for (var i = 0; i < studentList.length; i++){
   var linkText = document.createTextNode(studentList[i].linkdIn);
   linkdInLink.appendChild(linkText);
   linkdInLink.title = studentList[i].linkdIn;
-  linkdInLink.href = studentList[i].linkdIn;
+  linkdInLink.href = 'http://' + studentList[i].linkdIn;
   divTag.appendChild(linkdInLink);
 
   var gitHubLink = document.createElement('a');
@@ -46,7 +46,7 @@ for (var i = 0; i < studentList.length; i++){
   var linkText = document.createTextNode(studentList[i].gitHubURL);
   gitHubLink.appendChild(linkText);
   gitHubLink.title = studentList[i].gitHubURL;
-  gitHubLink.href = studentList[i].gitHubURL;
+  gitHubLink.href = 'http://' + studentList[i].gitHubURL;
   divTag.appendChild(gitHubLink);
 
 }

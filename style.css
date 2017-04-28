@@ -121,11 +121,12 @@ li.dropit {
 .style-link{
   display: block;
   display: inline-block;
-  font-size: 30px;
-  font-family: 'Sacramento', cursive;
+  font-size: 15px;
+  font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   color: white;
   cursor: pointer; cursor: hand;
+  overflow: scroll;
 }
 .style-image{
   /*width: 70%;*/
