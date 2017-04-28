@@ -126,7 +126,7 @@ li.dropit {
   text-decoration: none;
   color: white;
   cursor: pointer; cursor: hand;
-  overflow: scroll;
+
 }
 .style-image{
   /*width: 70%;*/
@@ -145,7 +145,6 @@ li.dropit {
   margin-bottom: 5%;
   padding-bottom: 5%;
   margin-left: 6%;
-  overflow: scroll;
   font-size: 30px;
   color: 	white;
   font-family: 'Shadows Into Light Two', cursive;
