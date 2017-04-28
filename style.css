@@ -270,7 +270,6 @@ body {
   height: 10%;
   color: white;
   font-weight: bold;
-  overflow: scroll;
 
 }
 #justinp {
@@ -278,7 +277,6 @@ body {
   height: 10%;
   color: white;
   font-weight: bold;
-  overflow: scroll;
 
 }
 #brianp {
@@ -286,7 +284,6 @@ body {
   height: 10%;
   color: white;
   font-weight: bold;
-  overflow: scroll;
 
 }
 #bios {
@@ -329,7 +326,7 @@ button {
 }
 #paragraph {
 float: left;
-margin-left: 20%;
+margin-left: 21%;
 }
 .deployed-page-URL {
   padding-bottom: 100px;
